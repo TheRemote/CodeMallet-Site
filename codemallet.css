@@ -1,0 +1,234 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body  {
+	background-color: #000000; 
+	color: #FFFFFF;
+	text-shadow: 
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+header {
+	color: #FFFFFF; 
+	background-image: url(codemallet.gif);
+	background-repeat: no-repeat;
+	background-position: 50px 0px;
+	text-align: center;
+}
+h1 {
+	margin: 3px;
+	padding: 28px;
+	padding-left: 100px;
+	color: #CC6633;
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-shadow: 2px 2px 2px #555555;
+}
+h2 {
+	font-size: 2em;
+	color: #CC6633;
+	font-family: "Georgia", "Times New Roman", "serif";
+	text-shadow: 1px 1px 1px #111111;
+}
+h3 {
+	color: #3399CC;
+	font-family: "Georgia", "Times New Roman", "serif";
+	text-shadow: 1px 1px 1px #111111;
+}
+a {
+	color: #FFFFFF;
+	transition: color 1s ease-in;
+}
+a:link {
+	color: #CC6633;
+}
+a:visited {
+	color: #CC6633;
+}
+a:hover {
+	color: #FFFFFF;
+}
+nav {
+	padding: 14px;
+	padding-top: 0;
+	font-weight: bold;
+	float: left;
+	width: 160px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.2em;	
+}
+nav li {
+	border: 2px solid #3399CC;
+	border-radius: 15px;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+}
+nav a:link {
+	text-decoration: none;
+	text-shadow: 2px 2px 2px #555555;
+}
+table {
+	border: 1px solid #3399CC;
+	border-spacing: 0;
+}
+td {
+	padding: 5px;
+	border: 1px solid #3399CC;
+	text-align: center
+}
+th {
+	border: 1px solid #3399CC;
+}
+tr {
+	text-align: center;
+}
+header {
+	padding: 0;
+	margin: 0;
+}
+tr:nth-of-type(odd) {
+	background-color: #222222;
+}
+.description {
+	text-align: left;
+}
+footer {
+	padding: 20px;
+	margin-left: 190px;
+	background-color: #111111;
+	color: #FFFFFF;
+	font-size: 75%;
+	font-style: italic;
+	font-family: "Georgia", "Times New Roman", "Times", "serif";
+	clear: both;
+	border-left: 1px solid #3399CC;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+#wrapper {
+	clear: both;
+	width: 80%;
+	min-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #222222;
+	border: 3px solid #3399CC;
+	border-radius: 8px;
+}
+#content {
+	padding-top: 1px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	margin-left: 190px;
+	background-color: #111111;
+	color: #FFFFFF;
+	border-left: 1px solid #3399CC;
+	border-top:  1px solid #3399CC;
+	text-shadow: 1px 1px 1px #000000;
+}
+#content li a {
+	text-decoration: none;
+}
+#content ul {
+	list-style-position: inside;
+}
+.codemallet {
+	background-image: url(codemalletlogo.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+.large {
+	font-size: 2.0em;
+}
+#content img {
+	float: right;
+	padding-right: 20px;
+}
+
+@media only screen and (max-width: 768px)
+{
+	body {
+		margin: 0;
+	}
+	h1 {
+		padding: 14px;	
+	}
+	#wrapper {
+		min-width: 0;
+		width: auto;
+	}
+	#content {
+		margin-left: 0;
+	}
+	nav {
+		float: none;
+		width: auto;
+		padding: 0;
+	}
+	nav ul {
+		text-align: center;
+	}
+	nav li {
+		display: inline;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 0.75em;
+		padding-right: 0.75em;
+	}
+	header {
+		background-position: center;
+	}
+	footer {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		margin: 0;
+	}
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		margin: 0;
+	}
+	#content {
+		padding-top: 0.1em;
+		padding-bottom: 0.1em;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin: 0;
+		font-size: 90%;
+	}
+	#content img {
+		float: none;
+		padding: 0;
+		margin: 0.1em;
+	}
+	#content ul {
+		list-style-position: outside;
+	}
+	h1 {
+		margin: 0;
+		padding: 14px;
+		font-size: 1.5em;
+	}
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+	nav li {
+		display: block;
+		margin: 0;
+	}
+	nav a {
+		display: block;
+	}
+}
